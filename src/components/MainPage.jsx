@@ -1,21 +1,22 @@
 import React from 'react'
 import Navbar from './Navigation/Navbar';
-import { CountContext } from '../CountContext'
+import { CounterContext } from '../CounterContext'
 import Banner from './Banner/Banner'
 import Middle from './Middle/Middle'
 import Footer from './Footer/Footer'
 
 
 
+
 function MainPage() {
 
-    const [count, setCount] = React.useState(0);
+    const [counter, setCounter] = React.useState(0);
 
 
     return (
 
         <div>
-            <CountContext.Provider value={{ count, setCount }}>
+            <CounterContext.Provider value={{ counter, setCounter }}>
                 <Navbar />
                 <Banner />
                 <Middle />
@@ -25,7 +26,8 @@ function MainPage() {
 
 
 
-            </CountContext.Provider>
+
+            </CounterContext.Provider>
 
         </div>
     )

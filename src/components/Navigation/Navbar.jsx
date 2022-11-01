@@ -1,5 +1,5 @@
 import React from 'react'
-import { CountContext } from '../../CountContext';
+import { CounterContext } from '../../CounterContext';
 import './Navbar.css'
 import men from '../../Images/men.png'
 import heart from '../../Images/heart.png';
@@ -7,7 +7,7 @@ import search from '../../Images/search.png'
 import cart from '../../Images/cart.png'
 
 function Navbar() {
-    const { counter } = React.useContext(CountContext)
+    const { counter } = React.useContext(CounterContext)
     return (
 
         <div className="navbar-container">

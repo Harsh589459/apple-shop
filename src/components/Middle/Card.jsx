@@ -1,11 +1,11 @@
 import React from 'react'
 import star from "../../Images/Star.png";
 import "./Middle.css";
-import { CountContext } from '../../CountContext'
+import { CounterContext } from '../../CounterContext'
 
 function Card(props) {
 
-    const { counter, setCounter } = React.useContext(CountContext)
+    const { counter, setCounter } = React.useContext(CounterContext)
 
     const [isAdded, setIsAdded] = React.useState(false)
 

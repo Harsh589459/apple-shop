@@ -4,6 +4,7 @@ import instagram from '../../Images/insta.png'
 import twitter from '../../Images/twitter.png'
 import './Footer.css'
 
+
 function Footer() {
 
     const [email, setEmail] = React.useState("");
